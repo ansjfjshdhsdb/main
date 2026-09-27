@@ -69,16 +69,16 @@ const players = {
             "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-B2F70ED77E65AADE277244A5D336D1DC-Png/150/150/AvatarHeadshot/Png/noFilter"
         },
         {
-            "username": "sasha_me68",
-            "role": "Працівник • молодший сержант",
-            "telegram": "@KatanaPurple",
-            "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-4B905B104F13CA21CBE595CB694DBAB5-Png/150/150/AvatarHeadshot/Png/noFilter"
-        },
-        {
             "username": "kolopohv",
             "role": "Працівник • старшина",
             "telegram": "@KairoGlol",
             "avatar": "https://tr.rbxcdn.com/30DAY-Avatar-8AE1A8DE9917A22218945BAB20CFEB7A-Png/420/420/Avatar/Png/noFilter"
+        },
+        {
+            "username": "sasha_me68",
+            "role": "Працівник • молодший сержант",
+            "telegram": "@KatanaPurple",
+            "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-4B905B104F13CA21CBE595CB694DBAB5-Png/150/150/AvatarHeadshot/Png/noFilter"
         },
         {
             "username": "danil_aboltus",
