@@ -88,7 +88,7 @@ const players = {
         },
         {
             "username": "kolopohv",
-            "role": "Працівник • рядовий",
+            "role": "Працівник • старшина",
             "telegram": "@KairoGlol",
             "avatar": "https://tr.rbxcdn.com/30DAY-Avatar-8AE1A8DE9917A22218945BAB20CFEB7A-Png/420/420/Avatar/Png/noFilter"
         }
