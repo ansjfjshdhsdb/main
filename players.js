@@ -81,12 +81,6 @@ const players = {
             "avatar": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-4B905B104F13CA21CBE595CB694DBAB5-Png/150/150/AvatarHeadshot/Png/noFilter"
         },
         {
-            "username": "danil_aboltus",
-            "role": "Працівник • Рядовий",
-            "telegram": "@grozaua3",
-            "avatar": "https://tr.rbxcdn.com/30DAY-Avatar-E4A27629F2B53CC82DBE69A5440AC2F0-Png/420/420/Avatar/Png/noFilter"
-        },
-        {
             "username": "SIGMA2019827",
             "role": "Працівник СБС | рядовий",
             "telegram": "@LMx_Shu",
