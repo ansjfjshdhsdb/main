@@ -1,0 +1,145 @@
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:Montserrat,sans-serif;
+    background:#0a0a0a;
+    color:#fff;
+}
+
+.fullscreen-image{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.image-overlay{
+    display: none;
+}
+
+.fullscreen-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.event-content{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background: transparent; 
+    padding:40px 40px 30px;
+    animation:.8s slideUp;
+}
+
+@keyframes slideUp{
+    from{transform:translateY(100%);opacity:0}
+    to{transform:translateY(0);opacity:1}
+}
+
+.event-title{
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:15px;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.event-date,
+.event-location,
+.contact-item {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+.event-date {
+    color: gold;
+}
+
+.event-date i{
+    font-size: 1.2rem;
+}
+
+.event-location {
+    opacity: .95;
+}
+
+.event-description{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.contact-item a {
+    color: #33b1ff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-item a:hover {
+    color: #75d1ff;
+    text-decoration: underline;
+}
+
+.telegram-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 19,2px;
+    height: 19,2px;
+    background-color: #229ed9;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.roblox-icon {
+    font-size: 0.95rem; 
+    color: #ffffff;   
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6));
+    width: 19,2px;
+    height: 19,2px
+    text-align: center;
+}
+
+.back-button{
+    display: inline-flex;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 1px solid rgba(255,255,255,.2);
+    margin-top: 5px;
+}
+
+.back-button:hover{
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateX(-5px);
+}
+
+.buttons-container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:768px){
+    .event-content{padding:30px 20px 20px}
+    .event-title{font-size:1.8rem}
+    .event-date, .event-location, .contact-item{font-size:.9rem}
+    .back-button{padding:8px 18px;font-size:.9rem}
+    .telegram-icon { width: 28px; height: 28px; font-size: 0.85rem; }
+    .roblox-icon { font-size: 0.95rem; }
+}
