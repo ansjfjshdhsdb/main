@@ -122,7 +122,7 @@ const players = {
         },
         {
             "username": "Gmmmf1224",
-            "role": "Капрал",
+            "role": "Сержант",
             "telegram": "@Myra1274"
         },
         {
