@@ -22,7 +22,6 @@ window.licenses = {
 
     // S
     "sasha_me68": {"username":"sasha_me68","status":"Дійсна","expiry":"30.08.26","telegram":"@KatanaPurple"},
-    "Slammed310": {"status":"Дійсна","expiry":"02.08.2026","telegram":"6026275163"},
 
     // V
     "Val1n0tm": {"status":"Дійсна","expiry":"24.08.2026","telegram":"t.me/g0gocat"},
