@@ -139,6 +139,11 @@ const players = {
             "username": "MILDERS67",
             "role": "Курсант ДБР",
             "telegram": "@Sasha_3455"
+        },
+        {
+            "username": "copyZasanec2",
+            "role": "Курсант ДБР",
+            "telegram": "@Glebgonko"
         }
     ],
     "Суд": [
