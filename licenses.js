@@ -5,7 +5,6 @@ window.licenses = {
     "Bohdan1031": {"username":"Bohdan1031","status":"Дійсна","expiry":"30.08.2026","telegram":"@zefirpvp"},
 
     // D
-    "DariySmertnk": {"status":"Дійсна","expiry":"30.08.2026","telegram":"7889063904","username":"DariySmertnk"},
     "DoggyGames_TV24": {"status":"Дійсна","expiry":"24.09.2027","telegram":"t.me/Doggy_Arrrr","username":"DoggyGames_TV24"},
 
     // E
