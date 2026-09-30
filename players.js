@@ -126,11 +126,6 @@ const players = {
             "telegram": "@Myra1274"
         },
         {
-            "username": "lesyadovben1985",
-            "role": "Сержант",
-            "telegram": "@PamPushO"
-        },
-        {
             "username": "KILLER_00803",
             "role": "Курсант ДБР",
             "telegram": "@Ivannoneivan2015"
