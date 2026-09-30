@@ -132,7 +132,7 @@ const players = {
         },
         {
             "username": "MILDERS67",
-            "role": "Курсант ДБР",
+            "role": "Капрал ДБР",
             "telegram": "@Sasha_3455"
         },
         {
