@@ -91,6 +91,12 @@ const players = {
             "role": "Працівник • рядовий",
             "telegram": "@BuddyyyXD",
             "avatar": "https://tr.rbxcdn.com/30DAY-Avatar-83B327F0A6F1F7504BB26F0C0F23BF81-Png/420/420/Avatar/Png/noFilter"
+        },
+        {
+            "username": "CAMERA_MEN2014",
+            "role": "Працівник СБС|Рядовий",
+            "telegram": "@BOSHKA_N1",
+            "avatar": "https://tr.rbxcdn.com/30DAY-Avatar-4215894C26B619BF85AEDE2D1BADD648-Png/420/420/Avatar/Png/noFilter"
         }
     ],
     "ДБР": [
