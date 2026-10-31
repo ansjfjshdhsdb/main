@@ -24,14 +24,14 @@ window.licenses = {
     "ROSTIKTHS": {"username":"ROSTIKTHS","status":"Дійсна","expiry":"02.09.2027","telegram":"@Mister_Pumasik"},
 
     // S
-    "sasha_me68": {"username":"sasha_me68","status":"Дійсна","expiry":"30.08.26","telegram":"@KatanaPurple"},
+    "sasha_me68": {"username":"sasha_me68","status":"Дійсна","expiry":"30.08.2026","telegram":"@KatanaPurple"},
 
     // V
     "Val1n0tm": {"status":"Дійсна","expiry":"24.08.2026","telegram":"t.me/g0gocat"},
 
     // Y
     "Yffgjjifh": {"status":"Дійсна","expiry":"10.09.2027","telegram":"5367053785","username":"Yffgjjifh"},
-    "YTNEON_2": {"username":"YTNEON_2","status":"дійсна","expiry":"15.09,2026","telegram":"@userh1pek"},
+    "YTNEON_2": {"username":"YTNEON_2","status":"дійсна","expiry":"15.09.2026","telegram":"@userh1pek"},
   },
   "business": [
     {"username":"XxsSashaxxjj","status":"7696678842","role":"Грант Плюс","telegram":"1921850684"},
