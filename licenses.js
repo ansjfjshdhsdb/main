@@ -2,7 +2,7 @@ window.licenses = {
   "weapon": {
 
     // B
-    "Bohdan1031": {"username":"Bohdan1031","status":"Дійсна","expiry":"30.08.20261","telegram":"@zefirpvp"},
+    "Bohdan1031": {"username":"Bohdan1031","status":"Дійсна","expiry":"30.08.2026","telegram":"@zefirpvp"},
 
     // C
     "copyZasanec2": {"username":"copyZasanec2","status":"Дійсна","expiry":"02.10.2026","telegram":"@Glebgonko"},
