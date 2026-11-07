@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 248" role="img" aria-label="Старовинний надгробок із написом RIP">
+<defs><linearGradient id="stone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a6a7a4"/><stop offset=".48" stop-color="#777b7a"/><stop offset="1" stop-color="#383d3f"/></linearGradient><linearGradient id="edge" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#bcc0bb"/><stop offset="1" stop-color="#414441"/></linearGradient><filter id="soft"><feGaussianBlur stdDeviation="5"/></filter></defs>
+<ellipse cx="106" cy="232" rx="93" ry="13" fill="#111" opacity=".6" filter="url(#soft)"/>
+<path d="M32 221V88C32 51 62 24 103 24s70 27 70 64v133Z" fill="#303534" stroke="#272f30" stroke-width="5"/>
+<path d="M25 216V86C25 41 57 12 102 12s79 29 79 74v130Z" fill="url(#edge)" stroke="#464847" stroke-width="4"/>
+<path d="M40 210V87c0-37 25-60 62-60s63 23 63 60v123Z" fill="url(#stone)" stroke="#898d8b" stroke-width="2"/>
+<path d="M116 29 112 57 130 72 115 101 123 122" fill="none" stroke="#343b3d" stroke-width="3" opacity=".73"/>
+<path d="m116 57-16 7m30 8 22-2" stroke="#343b3d" stroke-width="2" opacity=".7"/>
+<text x="101" y="142" font-family="Georgia,serif" text-anchor="middle" font-weight="bold" font-size="37" letter-spacing="4" fill="#3d4344">RIP</text>
+<text x="99" y="139" font-family="Georgia,serif" text-anchor="middle" font-weight="bold" font-size="37" letter-spacing="4" fill="#d8d6cb" opacity=".72">RIP</text>
+<path d="m87 155 15 13 15-13m-15 13v16m-13-1h27" fill="none" stroke="#454e4c" stroke-width="3" opacity=".8"/>
+<path d="M17 215q20-17 35 2 32-17 59-3 26-19 46 1 15-14 32 3l6 14H12Z" fill="#374734"/>
+<path d="m22 219-9-21m24 21 5-24m105 22-6-22m24 27 12-26m-107 25-2-19" stroke="#627247" stroke-width="3"/>
+<path d="M48 90q-9 35 0 69M65 50q15-15 35-13" fill="none" stroke="#e1e0d6" stroke-width="3" opacity=".25"/>
+</svg>
