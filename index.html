@@ -320,6 +320,78 @@
                 transform: translateX(-50%) translateY(0);
             }
         }
+
+        /* Halloween 2026: seasonal decorations are decorative, non-interactive,
+           and deliberately sit behind the website's functional content. */
+        .welcome-section, #rules { position: relative; isolation: isolate; }
+        .welcome-section > :not(.halloween-welcome-art),
+        #rules > :not(.halloween-rules-art) { position: relative; z-index: 1; }
+        .halloween-welcome-art, .halloween-rules-art {
+            position: absolute; inset: 0; z-index: 0; overflow: hidden;
+            pointer-events: none; user-select: none;
+        }
+        .halloween-art-piece {
+            position: absolute; display: block; height: auto;
+            pointer-events: none; user-select: none;
+            filter: drop-shadow(0 15px 12px rgba(0, 0, 0, .32));
+            transform-origin: bottom center;
+            animation: halloween-appear .9s ease-out both;
+        }
+        .halloween-welcome-art .hwp-one {
+            width: clamp(110px, 15vw, 208px); left: 1.2%; bottom: 4%;
+            transform: rotate(-7deg);
+        }
+        .halloween-welcome-art .hwp-two {
+            width: clamp(78px, 11vw, 148px); right: 2%; bottom: 6%;
+            transform: rotate(9deg);
+        }
+        .halloween-welcome-art .hwt-one {
+            width: clamp(96px, 13vw, 165px); right: 12%; bottom: 5%;
+            transform: rotate(4deg); opacity: .87;
+        }
+        .halloween-rules-art .hrp-one {
+            width: clamp(80px, 11vw, 158px); left: -3%; top: 48px;
+            transform: rotate(-10deg); opacity: .88;
+        }
+        .halloween-rules-art .hrt-one {
+            width: clamp(75px, 10vw, 145px); right: -2%; top: 16px;
+            transform: rotate(10deg); opacity: .82;
+        }
+        /* A small, visible graveyard border underneath the rules, after item 22. */
+        .halloween-graveyard {
+            display: flex; align-items: end; justify-content: center; gap: clamp(8px, 3vw, 38px);
+            min-height: 142px; margin: 20px auto 12px; padding: 10px 22px 0;
+            max-width: 1050px; position: relative; overflow: hidden;
+            border-bottom: 2px solid rgba(255, 150, 56, .26);
+            background: linear-gradient(0deg, rgba(24, 23, 19, .32), transparent 56%);
+            border-radius: 22px 22px 10px 10px;
+        }
+        .halloween-graveyard::before {
+            content: ''; position: absolute; left: 0; right: 0; bottom: 0;
+            height: 24px; background: radial-gradient(ellipse at 50% 90%, rgba(88, 96, 63, .48), transparent 73%);
+        }
+        .halloween-graveyard img { display: block; object-fit: contain; position: relative; }
+        .halloween-graveyard .hgr-pumpkin { width: clamp(76px, 13vw, 143px); }
+        .halloween-graveyard .hgr-grave { width: clamp(80px, 12vw, 125px); opacity: .87; }
+        .halloween-graveyard .hgr-grave:nth-child(3) { transform: rotate(-7deg); }
+        .halloween-graveyard .hgr-pumpkin:last-child { transform: rotate(7deg); }
+        @keyframes halloween-appear {
+            from { opacity: 0; translate: 0 14px; }
+            to { opacity: 1; translate: 0 0; }
+        }
+        @media (max-width: 768px) {
+            .halloween-welcome-art .hwp-one { left: -25px; bottom: 3px; width: 106px; opacity: .75; }
+            .halloween-welcome-art .hwp-two { right: -18px; bottom: 8px; width: 82px; opacity: .8; }
+            .halloween-welcome-art .hwt-one { display: none; }
+            .halloween-rules-art .hrp-one { left: -38px; top: 40px; width: 93px; opacity: .62; }
+            .halloween-rules-art .hrt-one { right: -44px; top: 30px; width: 95px; opacity: .55; }
+            .halloween-graveyard { min-height: 100px; gap: 5px; margin-top: 12px; padding-inline: 7px; }
+            .halloween-graveyard .hgr-pumpkin { width: clamp(65px, 20vw, 96px); }
+            .halloween-graveyard .hgr-grave { width: clamp(64px, 18vw, 86px); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .halloween-art-piece { animation: none; }
+        }
     </style>
 </head>
 
@@ -365,6 +437,11 @@
         <img src="/img/cookie.png" alt="Печиво" class="fortune-cookie" onclick="openCookie()" width="60" height="54">
     </div>
     <section class="welcome-section">
+        <div class="halloween-welcome-art" aria-hidden="true">
+            <img class="halloween-art-piece hwp-one" src="/img/halloween-jack-o-lantern.svg" alt="" loading="lazy">
+            <img class="halloween-art-piece hwt-one" src="/img/halloween-gravestone.svg" alt="" loading="lazy">
+            <img class="halloween-art-piece hwp-two" src="/img/halloween-jack-o-lantern.svg" alt="" loading="lazy">
+        </div>
         <div class="welcome-text">
             <h1>ВІТАЄМО В <span class="highlight">UKRAINE RP!</span></h1>
             <p> UKRAINE RP — топовий український RP-сервер в Emergency Hamburg у форматі Casual RP. <br>Тут тебе чекає
@@ -420,6 +497,10 @@
         </div>
         <div class="tab-content">
             <div id="rules" class="tab-panel active">
+                <div class="halloween-rules-art" aria-hidden="true">
+                    <img class="halloween-art-piece hrp-one" src="/img/halloween-jack-o-lantern.svg" alt="" loading="lazy">
+                    <img class="halloween-art-piece hrt-one" src="/img/halloween-gravestone.svg" alt="" loading="lazy">
+                </div>
                 <div class="header-wrapper">
                     <div class="header">
                         <h1 class="faq-title"> ПРАВИЛА </h1>
@@ -570,6 +651,24 @@
                         <div class="item-number"><small><b>21</b></small></div><b><span>Порушення Конституції
                                 сервера</span></b>
                     </div>
+                    <div data-id="rule-22" class="menu-item"
+                        onclick="openModalFromId('rule-22',`<h2 data-rule-number='22'>Оренда та купівля житла</h2>
+<p>На сервері діє оренда та купівля житла. Ви можете придбати будь-яку квартиру або будинок, який представлений у гілці &quot;Оренда житла&quot; у головній групі проекту (uarpeh). Діють фіксовані ціни, які є однаковими для всіх.</p>
+<h3>Стаття 1. Проникнення в чуже житло</h3>
+<p>Проникнення на чужу територію, квартиру або будинок вважається незаконним, якщо це було без RP-причини (Пограбування, викрадення, тощо).</p>
+<p class='penalty'>Покарання: попередження або депорт на 1 добу.</p><hr>
+<h3>Стаття 2. Доступ екстрених служб</h3>
+<p>На сервері вважаються екстреними службами: ДСНС (медики та пожежники), НПС, СБС та ДБР. Вони мають доступ до осель лише при порушенні або аварійній ситуації у ній (Пожежа, вбивство, теракт, викрадення, пограбування, тощо).</p>
+<p class='penalty'>Покарання: за протидію доступу - депорт на 1 добу, за безпідставний вхід - депорт на 1 добу + fix</p>`)"
+                    >
+                        <div class="item-number"><small><b>22</b></small></div><b><span>Оренда та купівля житла</span></b>
+                    </div>
+                </div>
+                <div class="halloween-graveyard" aria-hidden="true">
+                    <img class="hgr-grave" src="/img/halloween-gravestone.svg" alt="" loading="lazy">
+                    <img class="hgr-pumpkin" src="/img/halloween-jack-o-lantern.svg" alt="" loading="lazy">
+                    <img class="hgr-grave" src="/img/halloween-gravestone.svg" alt="" loading="lazy">
+                    <img class="hgr-pumpkin" src="/img/halloween-jack-o-lantern.svg" alt="" loading="lazy">
                 </div>
             </div>
             <div id="kks" class="tab-panel">
@@ -2234,6 +2333,7 @@
             style="color: white; margin-top: 0; margin-bottom: 20px; font-family: Montserrat, sans-serif; padding-right: 30px;">
             Останні оновлення</h2>
         <div style="color: #ddd; line-height: 1.6; font-family: Montserrat, sans-serif;">
+            <p><b>07.11:</b> Додано пункт 22 «Оренда та купівля житла» та гелловінське оформлення.</p>
             <p><b>21.09:</b> Зміна конституції, додання падаючого листя, фікс багів тощо.</p>
         </div>
         <span class="close"
